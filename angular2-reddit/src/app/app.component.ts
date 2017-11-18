@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  
+  addArticle(title, link) {
+    console.log(`Adding article: ${title} ${link}`);
+    return false;
+  }
 }

@@ -3,10 +3,17 @@
 
   <div class="field">
     <label for="title">Title:</label>
-    <input name="title">
+    <input name="title" #title>
   </div>
   <div class="field">
     <label for="link">Link:</label>
-    <input name="link">
+    <input name="link" #link>
   </div>
+  <button (click)="addArticle(title.value, link.value)" class="ui postive right floated button">
+    Submit link
+  </button>
 </form>
+
+<div class="ui grid posts">
+  <app-article class="row"></app-article>
+</div>
